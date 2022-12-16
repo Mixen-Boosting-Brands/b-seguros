@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-Seguros</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <div id="backdrop"></div>
+    <div class="menu">
+        <a id="cerrar-menu" href="javascript:void(0)">
+            <i class="fas fa-times"></i>
+        </a>
+        <div class="menu-contenido">
+            <a class="anchor" id="btn-logo" href="/">
+                <img class="logo img-fluid" src="./assets/images/logo.png" alt="">
+            </a>
+            <nav>
+                <ul class="list-unstyled">
+                    <li>
+                        <a class="anchor" id="btn-nav-1" href="#cotiza-tu-seguro">Cotiza tu seguro</a>
+                    </li>
+                    <li>
+                        <a class="anchor" id="btn-nav-2" href="#servicios">Servicios</a>
+                    </li>
+                    <li>
+                        <a class="anchor" id="btn-nav-3" href="#cta-3">¿Qué hacer en caso de siniestro?</a>
+                    </li>
+                    <li>
+                        <a class="anchor" id="btn-nav-4" href="#seguros">Conoce nuestros seguros</a>
+                    </li>
+                    <li>
+                        <a class="anchor" id="btn-nav-4" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#contacto" class="anchor btn btn-primary" id="btn-contacto">Contáctanos</a>
+            <!-- div id="social">
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div -->
+            <div id="contacto-menu">
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="far fa-envelope"></i> <a href="mailto:golivas@b-seguros.com.mx">golivas@b-seguros.com.mx</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i> <a href="tel:+526144438004">(614) 443 8004</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <header id="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 my-auto">
+                    <a href="/">
+                        <img src="./assets/images/logo.png" alt="" class="logo img-fluid" id="logo-navbar">
+                    </a>
+                </div>
+                <div class="col-9 my-auto text-end">
+                    <nav class="d-none d-lg-block">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="anchor" href="#cotiza-tu-seguro">Cotiza tu seguro</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="anchor" href="#servicios">Servicios</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="anchor" href="#cta-3">¿Qué hacer en caso de siniestro?</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="anchor" href="#seguros">Conoce nuestros seguros</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="anchor" href="#contacto">Contacto</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a id="mburger" class="d-lg-none" href="javascript:void(0)">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="que-hacer-en-caso-de-siniestro">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col text-center">
+                    <div class="content">
+                        <h2>¿Tuviste un siniestro?</h2>
+                        <h1>manten la calma.</h1>
+                        <p>Nosotros te ayudamos, selecciona el tipo de siniestro:</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <nav>
+                        <div class="nav nav-pills" id="nav-tab" role="tablist">
+                          <button class="rounded-pill nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Autos</button>
+                          <button class="rounded-pill nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Gastos Médicos</button>
+                          <button class="rounded-pill nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Empresarial</button>
+                          <button class="rounded-pill nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">Casa</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <!-- Pane 1 -->
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col header-container">
+                                    <div class="bg-auto"></div>
+                                    <h1>
+                                        <span class="badge rounded-pill text-bg-primary">Auto</span>
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="row my-5">
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-1 position-relative">
+                                            <h1 class="titulo-seccion">_Accidente</h1>
+                                        </div>
+                                        <div class="col-11">
+                                            <ol>
+                                                <li>Mantener la calma.</li>
+                                                <li>
+                                                    Si hay lesionados avisar a los servicios de emergencia vía 066. 
+                                                    Ubicar el # 01-800 en la póliza y con esta en mano reportarlo 
+                                                    telefónicamente. Al reportarlo, debes mencionar:
+                                                    <ul>
+                                                        <li>Lugar exacto del accidente.</li>
+                                                        <li>Marca y tipo del vehículo.</li>
+                                                        <li>Color y placas.</li>
+                                                        <li>Nombre del conductor.</li>
+                                                        <li>Número de póliza.</li>
+                                                        <li>Nombre del asegurado.</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    Cuando llegue el ajustador, ten la confianza de que estás en manos 
+                                                    seguras y por favor ten a la mano:
+                                                    <ul>
+                                                        <li>La póliza del seguro.</li>
+                                                        <li>Licencia o permiso de conducir.</li>
+                                                    </ul>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-1 position-relative">
+                                            <h1 class="titulo-seccion">_Robo</h1>
+                                        </div>
+                                        <div class="col-11">
+                                            <ol>
+                                                <li>Reportar a las autoridades a la brevedad, para evitar que se nos impute una responsabilidad de un acto cometido por el ladrón.</li>
+                                                <li>Reportar al 01-800 de la compañía aseguradora.</li>
+                                                <li>Seguir las indicaciones de parte del ajustador que te atenderá para documentar el expediente de reclamación para la indemnización.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pane 2 -->
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col header-container">
+                                    <div class="bg-gastos-medicos"></div>
+                                    <h1>
+                                        <span class="badge rounded-pill text-bg-primary">Gastos Médicos</span>
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="row my-5">
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-1 position-relative">
+                                            <h1 class="titulo-seccion">_¿Qué hacer?</h1>
+                                        </div>
+                                        <div class="col-11">
+                                            <p>Para reportar una eventualidad médica te recomendamos:</p>
+                                            <ol>
+                                                <li>Tener a la mano tu número de póliza.</li>
+                                                <li>Contactar a tu Agente de B-Seguros; es importante que él esté enterado de tu posible tratamiento o cirugía.</li>
+                                                <li>En caso de ser necesario, tomar acciones inmediatas como: solicitar ayuda, llamar a los bomberos, Cruz Roja, Policía, etc.</li>
+                                                <li>Reportar el siniestro de inmediato o a más tardar dentro de las 24 horas siguientes.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-1 position-relative">
+                                            <h1 class="titulo-seccion">_Contacto</h1>
+                                        </div>
+                                        <div class="col-11">
+                                            <p>Teléfono de contacto:</p>
+                                            <ul>
+                                                <li>
+                                                    <a href="tel:+526141514461">(614) 151 4461</a>
+                                                </li>
+                                            </ul>
+                                            <p>Correo electrónico:</p>
+                                            <ul>
+                                                <li>
+                                                    <a href="mailto:cynarteaga@b-seguros.com.mx">cynarteaga@b-seguros.com.mx</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pane 3 -->
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col header-container">
+                                    <div class="bg-empresarial"></div>
+                                    <h1>
+                                        <span class="badge rounded-pill text-bg-primary">Empresarial</span>
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="row my-5">
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-1 position-relative">
+                                            <h1 class="titulo-seccion">_¿Qué hacer?</h1>
+                                        </div>
+                                        <div class="col-11">
+                                            <p>Para reportar una eventualidad te recomendamos:</p>
+                                            <ol>
+                                                <li>Tener a la mano tu número de póliza.</li>
+                                                <li>Contactar a tu Agente de B-Seguros; es importante que él esté enterado de tu posible tratamiento o cirugía.</li>
+                                                <li>En caso de ser necesario, tomar acciones inmediatas como: solicitar ayuda, llamar a los bomberos, Cruz Roja, Policía, etc.</li>
+                                                <li>Reportar el siniestro de inmediato o a más tardar dentro de las 24 horas siguientes.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-1 position-relative">
+                                            <h1 class="titulo-seccion">_Contacto</h1>
+                                        </div>
+                                        <div class="col-11">
+                                            <p>Teléfono de contacto:</p>
+                                            <ul>
+                                                <li>
+                                                    <a href="tel:+526141514461">(614) 151 4461</a>
+                                                </li>
+                                            </ul>
+                                            <p>Correo electrónico:</p>
+                                            <ul>
+                                                <li>
+                                                    <a href="mailto:cynarteaga@b-seguros.com.mx">cynarteaga@b-seguros.com.mx</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pane 4 -->
+                        <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col header-container">
+                                    <div class="bg-casa"></div>
+                                    <h1>
+                                        <span class="badge rounded-pill text-bg-primary">Casa</span>
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="row my-5">
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-1 position-relative">
+                                            <h1 class="titulo-seccion">_¿Qué hacer?</h1>
+                                        </div>
+                                        <div class="col-11">
+                                            <p>Para reportar una eventualidad te recomendamos:</p>
+                                            <ol>
+                                                <li>Tener a la mano tu número de póliza.</li>
+                                                <li>Contactar a tu Agente de B-Seguros; es importante que él esté enterado de tu posible tratamiento o cirugía.</li>
+                                                <li>En caso de ser necesario, tomar acciones inmediatas como: solicitar ayuda, llamar a los bomberos, Cruz Roja, Policía, etc.</li>
+                                                <li>Reportar el siniestro de inmediato o a más tardar dentro de las 24 horas siguientes.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-1 position-relative">
+                                            <h1 class="titulo-seccion">_Contacto</h1>
+                                        </div>
+                                        <div class="col-11">
+                                            <p>Teléfono de contacto:</p>
+                                            <ul>
+                                                <li>
+                                                    <a href="tel:+526141514461">(614) 151 4461</a>
+                                                </li>
+                                            </ul>
+                                            <p>Correo electrónico:</p>
+                                            <ul>
+                                                <li>
+                                                    <a href="mailto:cynarteaga@b-seguros.com.mx">cynarteaga@b-seguros.com.mx</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="empresas" class="py-60">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <!-- Slider main container -->
+                    <div class="swiper swiper-logos">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="./assets/images/empresas/logos-empresas.png" alt="" class="img-fluid">
+                                </figure>
+                            </div>
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="./assets/images/empresas/logos-empresas.png" alt="" class="img-fluid">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.3454910532655!2d-106.09426838444483!3d28.649372182411092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea43bc1ca395f1%3A0x1f0950522a3efb34!2sB-SEGUROS%20AGENTE%20DE%20SEGUROS%20Y%20DE%20FIANZAS!5e0!3m2!1ses-419!2smx!4v1667586594714!5m2!1ses-419!2smx" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer class="pt-60" id="contacto">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-6 my-auto">
+                    <div class="content py-4 py-lg-0 text-center text-lg-start">
+                        <h2>Comienza a proteger</h2>
+                        <h1 class="ms-4">tu futuro</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6 my-auto">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-6 my-auto">
+                                <address>
+                                    Av. Glandorf 2903<br>
+                                    Col. San Felipe III Etapa<br>
+                                    Chihuahua, Chih.<br>
+                                    C.P. 31203
+                                </address>
+                            </div>
+                            <div class="col-6 my-auto">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        Teléfono: <a href="tel:+526144438004">(614) 443 8004</a>
+                                    </li>
+                                    <li>
+                                        Correo: <a href="mailto:golivas@b-seguros.com.mx">golivas@b-seguros.com.mx</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 my-auto">
+                    <div class="content">
+                        <!-- Aquí se inyecta feedback a usuario vía Ajax -->
+                        <div id="form-messages"></div>
+                        <!-- /Aquí se inyecta feedback a usuario vía Ajax -->
+                        <form action="mailer.php" method="POST" class="row g-3 needs-validation contact-form mb-4 mb-lg-0" id="ajax-contact" novalidate>
+                            <div class="col-md-6 form-floating">
+                                <input type="text" class="form-control shadow-none" id="nombre" name="nombre" placeholder="Nombre*"
+                                    pattern=".{5,50}" required>
+                                <label for="nombre" class="form-label">Nombre*</label>
+                                <div class="valid-feedback">
+                                    ¡Se ve bien!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor introduce tu nombre completo.
+                                </div>
+                            </div>
+                            <div class="col-md-6 form-floating">
+                                <input type="text" class="form-control shadow-none" id="apellido" name="apellido" placeholder="Apellido*"
+                                    pattern=".{5,50}" required>
+                                <label for="nombre" class="form-label">Apellido*</label>
+                                <div class="valid-feedback">
+                                    ¡Se ve bien!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor introduce tu apellido.
+                                </div>
+                            </div>
+                            <div class="col-md-6 form-floating">
+                                <input type="email" class="form-control shadow-none" id="correo" name="correo" placeholder="Correo electrónico*"
+                                    required>
+                                <label for="correo" class="form-label">Correo electrónico*</label>
+                                <div class="valid-feedback">
+                                    ¡Se ve bien!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor introduce un correo electrónico válido.
+                                </div>
+                            </div>
+                            <div class="col-md-6 form-floating">
+                                <input type="tel" class="form-control shadow-none" id="telefono" name="telefono" placeholder="Teléfono"
+                                    pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                                <label for="correo" class="form-label">Teléfono</label>
+                                <div class="valid-feedback">
+                                    ¡Se ve bien!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor escribe un número de teléfono válido (Ej: 6141234567).
+                                </div>
+                            </div>
+                            <div class="col-md-6 form-floating">
+                                <select class="form-select" id="floatingSelect" aria-label="Tipo de seguro*" required>
+                                    <option selected disabled value="">Personas:</option>
+                                    <option value="Gastos médicos mayores">Gastos médicos mayores</option>
+                                    <option value="Vida">Vida</option>
+                                    <option value="Auto">Auto</option>
+                                    <option value="Accidentes personales">Accidentes personales</option>
+                                    <option value="Seguro de casa">Seguro de casa</option>
+                                    <option value="Educación">Educación</option>
+                                    <option value="Viaje">Viaje</option>
+                                    <option disabled value="">Empresas:</option>
+                                    <option value="Daños">Daños</option>
+                                    <option value="Gastos médicos colectivo">Gastos médicos colectivo</option>
+                                    <option value="Vida grupo">Vida grupo</option>
+                                    <option value="Finanzas">Finanzas</option>
+                                    <option value="Flotillas">Flotillas</option>
+                                    <option value="Transporte">Transporte</option>
+                                </select>
+                                <label for="floatingSelect">Tipo de seguro*</label>
+                                <div class="valid-feedback">
+                                    ¡Se ve bien!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor selecciona un tipo de seguro.
+                                </div>
+                            </div>
+                            <div class="col-md-6 my-auto text-end">
+                                <button type="submit" class="btn btn-secondary btn-block rounded-pill mt-4 px-4 py-2">
+                                    <i class="fa-solid fa-paper-plane"></i> Enviar
+                                </button>
+                                <div id="hold-on-a-sec">
+                                    <i id="contact-spinner" class="fas fa-spinner fa-spin"></i> Espera un momento por favor...
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="copyright">
+            <p>&copy; 2022 B-Seguros. Todos los derechos reservados. Made with <i class="fa-solid fa-heart"></i> by <a href="https://mixen.mx/" target="_blank">Mixen</a>.</p>
+        </div>
+    </footer>
+
+    <!-- a href="https://wa.me/52614?text=Hola%20FOO%20BAR,%20necesito%20información." class="whatsapp" target="_blank"><i class="fab fa-whatsapp whatsapp-icon"></i></a -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/app.bundle.js"></script>
+</body>
+</html>

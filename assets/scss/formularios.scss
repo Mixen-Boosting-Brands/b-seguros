@@ -1,0 +1,51 @@
+#formulario {
+    @include background('../images/formularios/bg-formulario.png', center, cover);
+    color: $font-secondary;
+    padding: 120px 0;
+
+    .contenedor-formulario {
+        background-color: $bg-primary;
+        color: $font-primary;
+        width: 100%;
+        float: left;
+        padding: 60px 30px;
+
+        .btn-primary {
+            &:hover {
+                background-color: $bg-secondary;
+                border-color: $bg-secondary;
+                color: $font-primary;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: $font-tertiary;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .contenedor-disclaimer {
+        background-color: $bg-secondary;
+        color: $font-secondary;
+        width: 100%;
+        float: left;
+        padding: 30px;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            text-transform: uppercase;
+        }
+    }
+}

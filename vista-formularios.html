@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-Seguros</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <div id="backdrop"></div>
+    <div class="menu">
+        <a id="cerrar-menu" href="javascript:void(0)">
+            <i class="fas fa-times"></i>
+        </a>
+        <div class="menu-contenido">
+            <a class="anchor" id="btn-logo" href="/">
+                <img class="logo img-fluid" src="./assets/images/logo.png" alt="">
+            </a>
+            <nav>
+                <ul class="list-unstyled">
+                    <li>
+                        <a class="anchor" id="btn-nav-1" href="#cotiza-tu-seguro">Cotiza tu seguro</a>
+                    </li>
+                    <li>
+                        <a class="anchor" id="btn-nav-2" href="#servicios">Servicios</a>
+                    </li>
+                    <li>
+                        <a class="anchor" id="btn-nav-3" href="#cta-3">¿Qué hacer en caso de siniestro?</a>
+                    </li>
+                    <li>
+                        <a class="anchor" id="btn-nav-4" href="#seguros">Conoce nuestros seguros</a>
+                    </li>
+                    <li>
+                        <a class="anchor" id="btn-nav-4" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#contacto" class="anchor btn btn-primary" id="btn-contacto">Contáctanos</a>
+            <!-- div id="social">
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" target="_blank">
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div -->
+            <div id="contacto-menu">
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="far fa-envelope"></i> <a href="mailto:golivas@b-seguros.com.mx">golivas@b-seguros.com.mx</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i> <a href="tel:+526144438004">(614) 443 8004</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <header id="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 my-auto">
+                    <a href="/">
+                        <img src="./assets/images/logo.png" alt="" class="logo img-fluid" id="logo-navbar">
+                    </a>
+                </div>
+                <div class="col-9 my-auto text-end">
+                    <nav class="d-none d-lg-block">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="anchor" href="#cotiza-tu-seguro">Cotiza tu seguro</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="anchor" href="#servicios">Servicios</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="anchor" href="#cta-3">¿Qué hacer en caso de siniestro?</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="anchor" href="#seguros">Conoce nuestros seguros</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="anchor" href="#contacto">Contacto</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a id="mburger" class="d-lg-none" href="javascript:void(0)">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="formulario">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col text-center">
+                    <h1>Cotización Hogar</h1>
+                    <p>Gracias por elegir B Seguros, ingresa los siguientes datos y con gusto uno de nuestros asesores te hará llegar tu cotización.</p>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="contenedor-formulario rounded text-center">
+                        <h2>Datos generales</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="contenedor-disclaimer rounded text-center">
+                        <h5>Gracias por su preferencia</h5>
+                        <p>Nuestros ejecutivos le compartirán su cotización en un lapso no mayor a 96 hrs. hábiles. FAVOR DE VALIDAR QUE TODOS LOS DATOS PROPORCIONADOS SEAN CORRECTOS YA QUE EN CASO CONTRARIO ESTO PUEDE AFECTAR EL COSTO DE SU COTIZACIÓN.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="empresas" class="py-60">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <!-- Slider main container -->
+                    <div class="swiper swiper-logos">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="./assets/images/empresas/logos-empresas.png" alt="" class="img-fluid">
+                                </figure>
+                            </div>
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="./assets/images/empresas/logos-empresas.png" alt="" class="img-fluid">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.3454910532655!2d-106.09426838444483!3d28.649372182411092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea43bc1ca395f1%3A0x1f0950522a3efb34!2sB-SEGUROS%20AGENTE%20DE%20SEGUROS%20Y%20DE%20FIANZAS!5e0!3m2!1ses-419!2smx!4v1667586594714!5m2!1ses-419!2smx" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer class="pt-60" id="contacto">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-6 my-auto">
+                    <div class="content py-4 py-lg-0 text-center text-lg-start">
+                        <h2>Comienza a proteger</h2>
+                        <h1 class="ms-4">tu futuro</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6 my-auto">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-6 my-auto">
+                                <address>
+                                    Av. Glandorf 2903<br>
+                                    Col. San Felipe III Etapa<br>
+                                    Chihuahua, Chih.<br>
+                                    C.P. 31203
+                                </address>
+                            </div>
+                            <div class="col-6 my-auto">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        Teléfono: <a href="tel:+526144438004">(614) 443 8004</a>
+                                    </li>
+                                    <li>
+                                        Correo: <a href="mailto:golivas@b-seguros.com.mx">golivas@b-seguros.com.mx</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 my-auto">
+                    <div class="content">
+                        <!-- Aquí se inyecta feedback a usuario vía Ajax -->
+                        <div id="form-messages"></div>
+                        <!-- /Aquí se inyecta feedback a usuario vía Ajax -->
+                        <form action="mailer.php" method="POST" class="row g-3 needs-validation contact-form mb-4 mb-lg-0" id="ajax-contact" novalidate>
+                            <div class="col-md-6 form-floating">
+                                <input type="text" class="form-control shadow-none" id="nombre" name="nombre" placeholder="Nombre*"
+                                    pattern=".{5,50}" required>
+                                <label for="nombre" class="form-label">Nombre*</label>
+                                <div class="valid-feedback">
+                                    ¡Se ve bien!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor introduce tu nombre completo.
+                                </div>
+                            </div>
+                            <div class="col-md-6 form-floating">
+                                <input type="text" class="form-control shadow-none" id="apellido" name="apellido" placeholder="Apellido*"
+                                    pattern=".{5,50}" required>
+                                <label for="nombre" class="form-label">Apellido*</label>
+                                <div class="valid-feedback">
+                                    ¡Se ve bien!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor introduce tu apellido.
+                                </div>
+                            </div>
+                            <div class="col-md-6 form-floating">
+                                <input type="email" class="form-control shadow-none" id="correo" name="correo" placeholder="Correo electrónico*"
+                                    required>
+                                <label for="correo" class="form-label">Correo electrónico*</label>
+                                <div class="valid-feedback">
+                                    ¡Se ve bien!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor introduce un correo electrónico válido.
+                                </div>
+                            </div>
+                            <div class="col-md-6 form-floating">
+                                <input type="tel" class="form-control shadow-none" id="telefono" name="telefono" placeholder="Teléfono*"
+                                    pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                                <label for="correo" class="form-label">Teléfono*</label>
+                                <div class="valid-feedback">
+                                    ¡Se ve bien!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor escribe un número de teléfono válido (Ej: 6141234567).
+                                </div>
+                            </div>
+                            <div class="col-md-6 form-floating">
+                                <select class="form-select" id="tipo-de-seguro" name="tipo-de-seguro" aria-label="Tipo de seguro*" required>
+                                    <option selected disabled value="">Personas:</option>
+                                    <option value="Gastos médicos mayores">Gastos médicos mayores</option>
+                                    <option value="Vida">Vida</option>
+                                    <option value="Auto">Auto</option>
+                                    <option value="Accidentes personales">Accidentes personales</option>
+                                    <option value="Seguro de casa">Seguro de casa</option>
+                                    <option value="Educación">Educación</option>
+                                    <option value="Viaje">Viaje</option>
+                                    <option disabled value="">Empresas:</option>
+                                    <option value="Daños">Daños</option>
+                                    <option value="Gastos médicos colectivo">Gastos médicos colectivo</option>
+                                    <option value="Vida grupo">Vida grupo</option>
+                                    <option value="Finanzas">Finanzas</option>
+                                    <option value="Flotillas">Flotillas</option>
+                                    <option value="Transporte">Transporte</option>
+                                </select>
+                                <label for="tipo-de-seguro">Tipo de seguro*</label>
+                                <div class="valid-feedback">
+                                    ¡Se ve bien!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor selecciona un tipo de seguro.
+                                </div>
+                            </div>
+                            <div class="col-md-6 my-auto text-end">
+                                <button type="submit" class="btn btn-secondary btn-block rounded-pill mt-4 px-4 py-2">
+                                    <i class="fa-solid fa-paper-plane"></i> Enviar
+                                </button>
+                                <div id="hold-on-a-sec">
+                                    <i id="contact-spinner" class="fas fa-spinner fa-spin"></i> Espera un momento por favor...
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="copyright">
+            <p>&copy; 2022 B-Seguros. Todos los derechos reservados. Made with <i class="fa-solid fa-heart"></i> by <a href="https://mixen.mx/" target="_blank">Mixen</a>.</p>
+        </div>
+    </footer>
+
+    <!-- a href="https://wa.me/52614?text=Hola%20FOO%20BAR,%20necesito%20información." class="whatsapp" target="_blank"><i class="fab fa-whatsapp whatsapp-icon"></i></a -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/app.bundle.js"></script>
+</body>
+</html>
