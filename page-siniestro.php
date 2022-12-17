@@ -18,7 +18,7 @@
                           <button class="rounded-pill nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Autos</button>
                           <button class="rounded-pill nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Gastos Médicos</button>
                           <button class="rounded-pill nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Empresarial</button>
-                          <button class="rounded-pill nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">Casa</button>
+                          <button class="rounded-pill nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">Hogar</button>
                         </div>
                     </nav>
                     <div class="tab-content" id="nav-tabContent">
@@ -191,7 +191,7 @@
                                 <div class="col header-container">
                                     <div class="bg-casa"></div>
                                     <h1>
-                                        <span class="badge rounded-pill text-bg-primary">Casa</span>
+                                        <span class="badge rounded-pill text-bg-primary">Hogar</span>
                                     </h1>
                                 </div>
                             </div>
