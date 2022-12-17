@@ -36,7 +36,7 @@
                                 <div class="col-lg-6">
                                     <div class="row">
                                         <div class="col-1 position-relative">
-                                            <h1 class="titulo-seccion">_Accidente</h1>
+                                            <h1 class="titulo-seccion">Accidente</h1>
                                         </div>
                                         <div class="col-11">
                                             <ol>
@@ -69,7 +69,7 @@
                                 <div class="col-lg-6">
                                     <div class="row">
                                         <div class="col-1 position-relative">
-                                            <h1 class="titulo-seccion">_Robo</h1>
+                                            <h1 class="titulo-seccion">Robo</h1>
                                         </div>
                                         <div class="col-11">
                                             <ol>
@@ -97,7 +97,7 @@
                                 <div class="col-lg-6">
                                     <div class="row">
                                         <div class="col-1 position-relative">
-                                            <h1 class="titulo-seccion">_¿Qué hacer?</h1>
+                                            <h1 class="titulo-seccion">¿Qué hacer?</h1>
                                         </div>
                                         <div class="col-11">
                                             <p>Para reportar una eventualidad médica te recomendamos:</p>
@@ -113,7 +113,7 @@
                                 <div class="col-lg-6">
                                     <div class="row">
                                         <div class="col-1 position-relative">
-                                            <h1 class="titulo-seccion">_Contacto</h1>
+                                            <h1 class="titulo-seccion">Contacto</h1>
                                         </div>
                                         <div class="col-11">
                                             <p>Teléfono de contacto:</p>
@@ -148,7 +148,7 @@
                                 <div class="col-lg-6">
                                     <div class="row">
                                         <div class="col-1 position-relative">
-                                            <h1 class="titulo-seccion">_¿Qué hacer?</h1>
+                                            <h1 class="titulo-seccion">¿Qué hacer?</h1>
                                         </div>
                                         <div class="col-11">
                                             <p>Para reportar una eventualidad te recomendamos:</p>
@@ -164,7 +164,7 @@
                                 <div class="col-lg-6">
                                     <div class="row">
                                         <div class="col-1 position-relative">
-                                            <h1 class="titulo-seccion">_Contacto</h1>
+                                            <h1 class="titulo-seccion">Contacto</h1>
                                         </div>
                                         <div class="col-11">
                                             <p>Teléfono de contacto:</p>
@@ -199,7 +199,7 @@
                                 <div class="col-lg-6">
                                     <div class="row">
                                         <div class="col-1 position-relative">
-                                            <h1 class="titulo-seccion">_¿Qué hacer?</h1>
+                                            <h1 class="titulo-seccion">¿Qué hacer?</h1>
                                         </div>
                                         <div class="col-11">
                                             <p>Para reportar una eventualidad te recomendamos:</p>
@@ -215,7 +215,7 @@
                                 <div class="col-lg-6">
                                     <div class="row">
                                         <div class="col-1 position-relative">
-                                            <h1 class="titulo-seccion">_Contacto</h1>
+                                            <h1 class="titulo-seccion">Contacto</h1>
                                         </div>
                                         <div class="col-11">
                                             <p>Teléfono de contacto:</p>
