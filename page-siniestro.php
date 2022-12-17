@@ -80,6 +80,27 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-1 position-relative">
+                                            <h1 class="titulo-seccion">Contacto</h1>
+                                        </div>
+                                        <div class="col-11">
+                                            <p>Teléfono de contacto:</p>
+                                            <ul>
+                                                <li>
+                                                    <a href="tel:+526141514461">(614) 151 4461</a>
+                                                </li>
+                                            </ul>
+                                            <p>Correo electrónico:</p>
+                                            <ul>
+                                                <li>
+                                                    <a href="mailto:cynarteaga@b-seguros.com.mx">cynarteaga@b-seguros.com.mx</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
