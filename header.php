@@ -56,7 +56,7 @@
                     </li>
                 </ul>
             </nav>
-            <a href="#contacto" class="anchor btn btn-primary" id="btn-contacto">Contáctanos</a>
+            <a href="#contacto" class="anchor btn btn-secondary" id="btn-contacto">Contáctanos</a>
             <!-- div id="social">
                 <ul class="list-inline">
                     <li class="list-inline-item">
