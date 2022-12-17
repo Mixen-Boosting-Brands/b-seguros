@@ -160,7 +160,7 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/526143576264?text=Hola%20B-Seguros,%20necesito%20información." class="whatsapp" target="_blank">
+    <a href="https://wa.me/526143576264?text=Hola%20B-Seguros,%20necesito%20información." class="whatsapp" style="bottom: 95px;" target="_blank">
         <i class="fab fa-whatsapp whatsapp-icon"></i>
     </a>
     <a href="https://wa.me/526141189170?text=Hola%20B-Seguros,%20necesito%20información." class="whatsapp" target="_blank">
