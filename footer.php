@@ -1,155 +1,4 @@
-<!DOCTYPE html>
-<html lang="es-MX">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B-Seguros</title>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="./assets/css/styles.css">
-</head>
-<body>
-    <div id="backdrop"></div>
-    <div class="menu">
-        <a id="cerrar-menu" href="javascript:void(0)">
-            <i class="fas fa-times"></i>
-        </a>
-        <div class="menu-contenido">
-            <a class="anchor" id="btn-logo" href="/">
-                <img class="logo img-fluid" src="./assets/images/logo.png" alt="">
-            </a>
-            <nav>
-                <ul class="list-unstyled">
-                    <li>
-                        <a class="anchor" id="btn-nav-1" href="#cotiza-tu-seguro">Cotiza tu seguro</a>
-                    </li>
-                    <li>
-                        <a class="anchor" id="btn-nav-2" href="#servicios">Servicios</a>
-                    </li>
-                    <li>
-                        <a class="anchor" id="btn-nav-3" href="#cta-3">¿Qué hacer en caso de siniestro?</a>
-                    </li>
-                    <li>
-                        <a class="anchor" id="btn-nav-4" href="#seguros">Conoce nuestros seguros</a>
-                    </li>
-                    <li>
-                        <a class="anchor" id="btn-nav-4" href="#contacto">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-            <a href="#contacto" class="anchor btn btn-primary" id="btn-contacto">Contáctanos</a>
-            <!-- div id="social">
-                <ul class="list-inline">
-                    <li class="list-inline-item">
-                        <a href="#" target="_blank">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#" target="_blank">
-                            <i class="fab fa-twitter-square"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#" target="_blank">
-                            <i class="fab fa-instagram-square"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div -->
-            <div id="contacto-menu">
-                <ul class="list-unstyled">
-                    <li>
-                        <i class="far fa-envelope"></i> <a href="mailto:golivas@b-seguros.com.mx">golivas@b-seguros.com.mx</a>
-                    </li>
-                    <li>
-                        <i class="fas fa-phone"></i> <a href="tel:+526144438004">(614) 443 8004</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <header id="navbar">
-        <div class="container">
-            <div class="row">
-                <div class="col-3 my-auto">
-                    <a href="/">
-                        <img src="./assets/images/logo.png" alt="" class="logo img-fluid" id="logo-navbar">
-                    </a>
-                </div>
-                <div class="col-9 my-auto text-end">
-                    <nav class="d-none d-lg-block">
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <a class="anchor" href="#cotiza-tu-seguro">Cotiza tu seguro</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="anchor" href="#servicios">Servicios</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="anchor" href="#cta-3">¿Qué hacer en caso de siniestro?</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="anchor" href="#seguros">Conoce nuestros seguros</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="anchor" href="#contacto">Contacto</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <a id="mburger" class="d-lg-none" href="javascript:void(0)">
-                        <i class="fas fa-bars"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section id="formulario">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col text-center">
-                    <h1>Cotización Hogar</h1>
-                    <p>Gracias por elegir B Seguros, ingresa los siguientes datos y con gusto uno de nuestros asesores te hará llegar tu cotización.</p>
-                </div>
-            </div>
-            <div class="row mb-4">
-                <div class="col">
-                    <div class="contenedor-formulario rounded text-center">
-                        <h2>Datos generales</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="contenedor-disclaimer rounded text-center">
-                        <h5>Gracias por su preferencia</h5>
-                        <p>Nuestros ejecutivos le compartirán su cotización en un lapso no mayor a 96 hrs. hábiles. FAVOR DE VALIDAR QUE TODOS LOS DATOS PROPORCIONADOS SEAN CORRECTOS YA QUE EN CASO CONTRARIO ESTO PUEDE AFECTAR EL COSTO DE SU COTIZACIÓN.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="empresas" class="py-60">
+	<section id="empresas" class="py-60">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -160,13 +9,13 @@
                             <!-- Slides -->
                             <div class="swiper-slide">
                                 <figure>
-                                    <img src="./assets/images/empresas/logos-empresas.png" alt="" class="img-fluid">
+                                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/empresas/logos-empresas-1.png" alt="" class="img-fluid">
                                 </figure>
                             </div>
                             <!-- Slides -->
                             <div class="swiper-slide">
                                 <figure>
-                                    <img src="./assets/images/empresas/logos-empresas.png" alt="" class="img-fluid">
+                                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/empresas/logos-empresas-2.png" alt="" class="img-fluid">
                                 </figure>
                             </div>
                         </div>
@@ -185,7 +34,8 @@
             <div class="row mb-4">
                 <div class="col-lg-6 my-auto">
                     <div class="content py-4 py-lg-0 text-center text-lg-start">
-                        <h2>Comienza a proteger</h2>
+                        <!-- 	Agregue style! por que se encimaban	 -->
+                        <h2 style="margin-bottom: 16px !important;">Protege</h2>
                         <h1 class="ms-4">tu futuro</h1>
                     </div>
                 </div>
@@ -306,13 +156,15 @@
         </div>
 
         <div id="copyright">
-            <p>&copy; 2022 B-Seguros. Todos los derechos reservados. Made with <i class="fa-solid fa-heart"></i> by <a href="https://mixen.mx/" target="_blank">Mixen</a>.</p>
+            <p>&copy; <?php echo esc_html( date( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>. Todos los derechos reservados. Made with <i class="fa-solid fa-heart"></i> by <a href="https://mixen.mx/" target="_blank">Mixen</a>.</p>
         </div>
     </footer>
 
     <!-- a href="https://wa.me/52614?text=Hola%20FOO%20BAR,%20necesito%20información." class="whatsapp" target="_blank"><i class="fab fa-whatsapp whatsapp-icon"></i></a -->
 
+	<?php wp_footer(); ?>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./assets/js/app.bundle.js"></script>
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/app.bundle.js"></script>
 </body>
 </html>

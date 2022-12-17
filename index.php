@@ -1,129 +1,6 @@
-<!DOCTYPE html>
-<html lang="es-MX">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B-Seguros</title>
+<?php get_header(); ?>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="./assets/css/styles.css">
-</head>
-<body>
-    <div id="backdrop"></div>
-    <div class="menu">
-        <a id="cerrar-menu" href="javascript:void(0)">
-            <i class="fas fa-times"></i>
-        </a>
-        <div class="menu-contenido">
-            <a class="anchor" id="btn-logo" href="/">
-                <img class="logo img-fluid" src="./assets/images/logo.png" alt="">
-            </a>
-            <nav>
-                <ul class="list-unstyled">
-                    <li>
-                        <a class="anchor" id="btn-nav-1" href="#cotiza-tu-seguro">Cotiza tu seguro</a>
-                    </li>
-                    <li>
-                        <a class="anchor" id="btn-nav-2" href="#servicios">Servicios</a>
-                    </li>
-                    <li>
-                        <a class="anchor" id="btn-nav-3" href="#cta-3">¿Qué hacer en caso de siniestro?</a>
-                    </li>
-                    <li>
-                        <a class="anchor" id="btn-nav-4" href="#seguros">Conoce nuestros seguros</a>
-                    </li>
-                    <li>
-                        <a class="anchor" id="btn-nav-4" href="#contacto">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-            <a href="#contacto" class="anchor btn btn-primary" id="btn-contacto">Contáctanos</a>
-            <!-- div id="social">
-                <ul class="list-inline">
-                    <li class="list-inline-item">
-                        <a href="#" target="_blank">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#" target="_blank">
-                            <i class="fab fa-twitter-square"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#" target="_blank">
-                            <i class="fab fa-instagram-square"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div -->
-            <div id="contacto-menu">
-                <ul class="list-unstyled">
-                    <li>
-                        <i class="far fa-envelope"></i> <a href="mailto:golivas@b-seguros.com.mx">golivas@b-seguros.com.mx</a>
-                    </li>
-                    <li>
-                        <i class="fas fa-phone"></i> <a href="tel:+526144438004">(614) 443 8004</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <header id="navbar">
-        <div class="container">
-            <div class="row">
-                <div class="col-3 my-auto">
-                    <a href="/">
-                        <img src="./assets/images/logo.png" alt="" class="logo img-fluid" id="logo-navbar">
-                    </a>
-                </div>
-                <div class="col-9 my-auto text-end">
-                    <nav class="d-none d-lg-block">
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <a class="anchor" href="#cotiza-tu-seguro">Cotiza tu seguro</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="anchor" href="#servicios">Servicios</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="anchor" href="#cta-3">¿Qué hacer en caso de siniestro?</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="anchor" href="#seguros">Conoce nuestros seguros</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="anchor" href="#contacto">Contacto</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <a id="mburger" class="d-lg-none" href="javascript:void(0)">
-                        <i class="fas fa-bars"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section id="carrusel">
+	<section id="carrusel">
         <!-- Slider main container -->
         <div class="swiper swiper-carrusel">
             <!-- Additional required wrapper -->
@@ -135,47 +12,54 @@
                             <h2>Brindando servicios</h2>
                             <h1>de vanguardia</h1>
                             <h3>Protegiendo el patrimonio de tu familia</h3>
-                            <a href="#" class="btn btn-primary rounded-pill my-2 p-3 p-3">Obtener una cotización</a>
+                            <a href="<?php echo get_permalink('8'); ?>" class="btn btn-primary rounded-pill my-2 p-3 p-3">Obtener una cotización</a>
                         </div>
                         <video id="bg-video" autoplay muted loop>
-                            <source src="./assets/videos/video.mp4" type="video/mp4">
+                            <source src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/videos/video.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <div id="overlay"></div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide" style="background-image: url('./assets/images/carrusel/slide-2.png');">
+                    <div class="slide" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/carrusel/slide-2.png');">
                         <div class="slide-content">
                             <h2>Aseguramos y protegemos contra</h2>
                             <h1>cualquier daño</h1>
                             <h3>al que puedan estar expuestos</h3>
-                            <a href="#" class="btn btn-primary rounded-pill my-2 p-3">Obtener una cotización</a>
+                            <a href="<?php echo get_permalink('16'); ?>" class="btn btn-primary rounded-pill my-2 p-3">Obtener una cotización</a>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide" style="background-image: url('./assets/images/carrusel/slide-3.png');">
+                    <div class="slide" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/carrusel/slide-3.png');">
                         <div class="slide-content">
                             <h2>Protegemos la salud,</h2>
                             <h1>ayudamos a tu empresa</h1>
                             <h3>a contar con el mejor plan de Gastos Médicos</h3>
-                            <a href="#" class="btn btn-primary rounded-pill my-2 p-3">Obtener una cotización</a>
+                            <a href="<?php echo get_permalink('12'); ?>" class="btn btn-primary rounded-pill my-2 p-3">Obtener una cotización</a>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide" style="background-image: url('./assets/images/carrusel/slide-4.png');">
+                    <div class="slide" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/carrusel/slide-4.png');">
                         <div class="slide-content">
                             <h2>Autos y flotillas, tenemos</h2>
                             <h1>la mejor protección</h1>
                             <h3>para tu flotilla de autos y equipo pesado</h3>
-                            <a href="#" class="btn btn-primary rounded-pill my-2 p-3">Obtener una cotización</a>
+                            <ul class="list-inline">
+                                <li class="list-inline item">
+                                    <a href="<?php echo get_permalink('14'); ?>" class="btn btn-primary rounded-pill my-2 p-3">Obtener una cotización (unidades de transporte pasajeros)</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo get_permalink('20'); ?>" class="btn btn-primary rounded-pill my-2 p-3">Obtener una cotización (equipo pesado y/o tractocamión)</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide" style="background-image: url('./assets/images/carrusel/slide-5.png');">
+                    <div class="slide" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/carrusel/slide-5.png');">
                         <div class="slide-content">
                             <h2>Gobierno Corporativo</h2>
                             <h1>apoyamos a tu empresa</h1>
@@ -185,18 +69,18 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide" style="background-image: url('./assets/images/carrusel/slide-6.png');">
+                    <div class="slide" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/carrusel/slide-6.png');">
                         <div class="slide-content">
                             <h2>En B-Seguros sabemos que</h2>
                             <h1>tu protección</h1>
                             <h3>y la de tu familia es lo más importante, te ofrecemos productos acordes a tus necesidades y con precio muy accesible</h3>
-                            <a href="#" class="btn btn-primary rounded-pill my-2 p-3">Obtener una cotización</a>
+                            <a href="#cotiza-tu-seguro" class="btn btn-primary rounded-pill my-2 p-3 anchor">Obtener una cotización</a>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+<!--             <div class="swiper-pagination"></div> -->
         
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
@@ -204,7 +88,7 @@
         </div>
     </section>
 
-    <section id="cta-1" class="cta parallax-window" data-parallax="scroll" data-image-src="./assets/images/cta-1/bg-cta-1.png">
+    <section id="cta-1" class="cta parallax-window" data-parallax="scroll" data-image-src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/cta-1/bg-cta-1.png">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 my-auto">
@@ -217,7 +101,7 @@
                 </div>
                 <div class="col-lg-6 my-auto">
                     <figure>
-                        <img src="./assets/images/cta-1/thumb-cta-1.png" alt="" class="img-fluid">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/cta-1/thumb-cta-1.png" alt="" class="img-fluid">
                     </figure>
                 </div>
             </div>
@@ -234,7 +118,7 @@
             <div class="row mb-4">
                 <div class="col-lg-3 mb-4 mb-lg-0">
                     <div class="content rounded">
-                        <a href="#">
+                        <a href="<?php echo get_permalink('12'); ?>">
                             <p>Gastos Médicos<br>Mayores</p>
                             <span class="ico ico-1"></span>
                         </a>
@@ -242,7 +126,7 @@
                 </div>
                 <div class="col-lg-3 mb-4 mb-lg-0">
                     <div class="content rounded">
-                        <a href="#">
+                        <a href="<?php echo get_permalink('10'); ?>">
                             <p>Seguro de<br>Vida</p>
                             <span class="ico ico-2"></span>
                         </a>
@@ -250,7 +134,7 @@
                 </div>
                 <div class="col-lg-3 mb-4 mb-lg-0">
                     <div class="content rounded">
-                        <a href="#">
+                        <a href="<?php echo get_permalink('16'); ?>">
                             <p>Seguro de<br>Auto</p>
                             <span class="ico ico-3"></span>
                         </a>
@@ -258,7 +142,7 @@
                 </div>
                 <div class="col-lg-3 mb-4 mb-lg-0">
                     <div class="content rounded">
-                        <a href="#">
+                        <a href="<?php echo get_permalink('8'); ?>">
                             <p>Casa<br>Habitación</p>
                             <span class="ico ico-4"></span>
                         </a>
@@ -267,13 +151,13 @@
             </div>
             <div class="row">
                 <div class="col text-center">
-                    <a href="#" class="btn btn-primary rounded-pill my-2 px-4 py-2">Conoce más</a>
+                    <a class="btn btn-primary rounded-pill anchor" href="#seguros" class="btn btn-primary rounded-pill my-2 px-4 py-2">Conoce más</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="servicios" class="py-60 parallax-window" data-parallax="scroll" data-image-src="./assets/images/servicios/bg-servicios.png">
+    <section id="servicios" class="py-60 parallax-window" data-parallax="scroll" data-image-src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/servicios/bg-servicios.png">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-lg-3 servicio-1">
@@ -348,20 +232,20 @@
                         <h1>en caso de siniestro?</h1>
                         <p>Infórmate en caso de un sistema de urgencia médica, auto y daños empresariales.</p>
                         <div class="text-lg-end">
-                            <a href="que-hacer-en-caso-de-siniestro.html" class="btn btn-primary rounded-pill mt-2 mb-4 mb-lg-0 px-4 py-2">Leer más</a>
+                            <a href="<?php echo get_permalink('5'); ?>" class="btn btn-primary rounded-pill mt-2 mb-4 mb-lg-0 px-4 py-2">Leer más</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-5 my-auto">
                     <figure>
-                        <img src="./assets/images/cta-3/thumb-cta-3.png" alt="" class="img-fluid">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/cta-3/thumb-cta-3.png" alt="" class="img-fluid">
                     </figure>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="descanso" class="parallax-window" data-parallax="scroll" data-image-src="./assets/images/descanso/bg-descanso.png">
+    <section id="descanso" class="parallax-window" data-parallax="scroll" data-image-src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/descanso/bg-descanso.png">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -458,7 +342,7 @@
         </div>
     </section>
 
-    <section id="cta-2" class="cta parallax-window" data-parallax="scroll" data-image-src="./assets/images/cta-2/bg-cta-2.png">
+    <section id="cta-2" class="cta parallax-window" data-parallax="scroll" data-image-src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/cta-2/bg-cta-2.png">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 offset-lg-1 my-auto">
@@ -467,7 +351,7 @@
                         <h1 class="ms-4">contacto</h1>
                         <h3 class="text-uppercase">
                             <a href="tel:+526141514461">
-                                <img src="./assets/images/cta-2/ico-telefono.svg" alt="" id="ico-telefono" class="img-fluid d-inline">
+                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/cta-2/ico-telefono.svg" alt="" id="ico-telefono" class="img-fluid d-inline">
                                 614 151 4461
                             </a>
                         </h3>
@@ -476,7 +360,7 @@
                 </div>
                 <div class="col-lg-5 my-auto">
                     <figure>
-                        <img src="./assets/images/cta-2/thumb-cta-2.png" alt="" class="img-fluid">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/cta-2/thumb-cta-2.png" alt="" class="img-fluid">
                     </figure>
                 </div>
             </div>
@@ -511,7 +395,7 @@
                                                     para hacer frente a los gastos generados 
                                                     por la atención médica originados de un 
                                                     accidente o enfermedad.</p>
-                                                <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Cotizar</a>
+                                                <a href="<?php echo get_permalink('12'); ?>" class="btn btn-primary rounded-pill px-4 py-2">Cotizar</a>
                                             </div>
                                         </div>
                                     </div>
@@ -522,7 +406,7 @@
                                                 <p class="card-text">El mundo está lleno de riesgos, deja
                                                     a los tuyos protegidos y asegúrales
                                                     un futuro tranquilo.</p>
-                                                <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Cotizar</a>
+                                                <a href="<?php echo get_permalink('10'); ?>" class="btn btn-primary rounded-pill px-4 py-2">Cotizar</a>
                                             </div>
                                         </div>
                                     </div>
@@ -535,7 +419,7 @@
                                                     dependiendo de tu elección te cubrirán
                                                     daños a terceros o los daños ocasionados
                                                     a tu vehículo y tus pasajeros.</p>
-                                                <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Cotizar</a>
+                                                <a href="<?php echo get_permalink('16'); ?>" class="btn btn-primary rounded-pill px-4 py-2">Cotizar</a>
                                             </div>
                                         </div>
                                     </div>
@@ -549,7 +433,7 @@
                                                     si el asegurado fallece a causa de un accidente,
                                                     protege perdidad orgánicas y gastos médicos
                                                     derivados de un accidente.</p>
-                                                <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Cotizar</a>
+                                                <a href="<?php echo get_permalink('12'); ?>" class="btn btn-primary rounded-pill px-4 py-2">Cotizar</a>
                                             </div>
                                         </div>
                                     </div>
@@ -561,10 +445,11 @@
                                                     para hacer frente a los fenómenos
                                                     hidrometeorológicos. incendios, explosión,
                                                     robo entre otros.</p>
-                                                <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Cotizar</a>
+                                                <a href="<?php echo get_permalink('8'); ?>" class="btn btn-primary rounded-pill px-4 py-2">Cotizar</a>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- cards comentadas -->
                                     <div class="col-lg-4 mb-4">
                                         <div class="card mb-3">
                                             <div class="card-body">
@@ -572,7 +457,7 @@
                                                 <p class="card-text">Plan que permite asegurar el pago de la
                                                     formación académica universitaria de 
                                                     los hijos o beneficiarios.</p>
-                                                <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Cotizar</a>
+<!--                                                 <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Cotizar</a> -->
                                             </div>
                                         </div>
                                     </div>
@@ -583,10 +468,11 @@
                                                 <p class="card-text">Ten tranquilidad de sentirte protegido
                                                     en caso de alguna eventualidad
                                                     en tu viaje.</p>
-                                                <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Cotizar</a>
+<!--                                                 <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Cotizar</a> -->
                                             </div>
                                         </div>
                                     </div>
+									<!-- end cards comentadas -->
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
@@ -599,54 +485,19 @@
                                                     incendio o inundación, te asesoramod en
                                                     la contratación del plan como propietario
                                                     o arrendatario.</p>
-                                                <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Cotizar</a>
+                                                <a href="<?php echo get_permalink('61'); ?>" class="btn btn-primary rounded-pill px-4 py-2">Cotizar</a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 mb-4">
-                                        <div class="card mb-3">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Gastos Médicos Colectivo</h4>
-                                                <p class="card-text">Te apoyamos a contar con seguro
-                                                    colectivo a la medida de tu empresa o
-                                                    Grupo, protegiendo la salud de tus
-                                                    colaboradores</p>
-                                                <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Cotizar</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 mb-4">
-                                        <div class="card mb-3">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Vida Grupo</h4>
-                                                <p class="card-text">El recurso más importante de tu negocio,
-                                                    la vida de tus colaboradores, a través del
-                                                    seguro social de vida Grupo se brinda
-                                                    tranquilidad a él y a sus seres queridos en
-                                                    caso de fallecimiento.</p>
-                                                <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Cotizar</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 mb-4">
-                                        <div class="card mb-3">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Finanzas</h4>
-                                                <p class="card-text">Te apoyamos a la contratación de
-                                                    finanzas y hacer frente a la obligación
-                                                    de un contrato ante un beneficiario.</p>
-                                                <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Cotizar</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 mb-4">
+									<!-- cards comentadas -->
+                                     <div class="col-lg-4 mb-4">
                                         <div class="card mb-3">
                                             <div class="card-body">
                                                 <h4 class="card-title">Flotillas</h4>
                                                 <p class="card-text">Buscamos las mejores compañías
                                                     aseguradoras para tus colectividades
                                                     de autos y equipo pesado.</p>
-                                                <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Cotizar</a>
+                                                <a href="<?php echo get_permalink('20'); ?>" class="btn btn-primary rounded-pill px-4 py-2">Cotizar</a>
                                             </div>
                                         </div>
                                     </div>
@@ -659,10 +510,46 @@
                                                     a los que están expuestas las mercancías
                                                     que son transportadas vía terrestre,
                                                     aérea y marítima.</p>
-                                                <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Cotizar</a>
+                                                <a href="<?php echo get_permalink('14'); ?>" class="btn btn-primary rounded-pill px-4 py-2">Cotizar</a>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-lg-4 mb-4">
+                                        <div class="card mb-3">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Fianzas</h4>
+                                                <p class="card-text">Te apoyamos a la contratación de
+                                                   fianzas y hacer frente a la obligación
+                                                    de un contrato ante un beneficiario.</p>
+<!--                                                 <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Cotizar</a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+									<!-- end cards comentadas -->
+                                    <div class="col-lg-4 mb-4">
+                                        <div class="card mb-3">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Gastos Médicos Colectivo</h4>
+                                                <p class="card-text">Te apoyamos a contar con seguro
+                                                    colectivo a la medida de tu empresa o
+                                                    Grupo, protegiendo la salud de tus
+                                                    colaboradores</p>
+<!--                                                 <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Cotizar</a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 mb-4">
+                                        <div class="card mb-3">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Vida Grupo</h4>
+                                                <p class="card-text">El recurso más importante de tu negocio,
+                                                    la vida de tus colaboradores, a través del
+                                                    seguro social de vida Grupo se brinda
+                                                    tranquilidad a él y a sus seres queridos en
+                                                    caso de fallecimiento.</p>
+<!--                                                 <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Cotizar</a> -->
+                                            </div>
+                                        </div>									
                                 </div>
                             </div>
                         </div>
@@ -672,170 +559,4 @@
         </div>
     </section>
 
-    <section id="empresas" class="py-60">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <!-- Slider main container -->
-                    <div class="swiper swiper-logos">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <figure>
-                                    <img src="./assets/images/empresas/logos-empresas-1.png" alt="" class="img-fluid">
-                                </figure>
-                            </div>
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <figure>
-                                    <img src="./assets/images/empresas/logos-empresas-2.png" alt="" class="img-fluid">
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.3454910532655!2d-106.09426838444483!3d28.649372182411092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea43bc1ca395f1%3A0x1f0950522a3efb34!2sB-SEGUROS%20AGENTE%20DE%20SEGUROS%20Y%20DE%20FIANZAS!5e0!3m2!1ses-419!2smx!4v1667586594714!5m2!1ses-419!2smx" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-
-    <footer class="pt-60" id="contacto">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-lg-6 my-auto">
-                    <div class="content py-4 py-lg-0 text-center text-lg-start">
-                        <h2>Comienza a proteger</h2>
-                        <h1 class="ms-4">tu futuro</h1>
-                    </div>
-                </div>
-                <div class="col-lg-6 my-auto">
-                    <div class="content">
-                        <div class="row">
-                            <div class="col-6 my-auto">
-                                <address>
-                                    Av. Glandorf 2903<br>
-                                    Col. San Felipe III Etapa<br>
-                                    Chihuahua, Chih.<br>
-                                    C.P. 31203
-                                </address>
-                            </div>
-                            <div class="col-6 my-auto">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        Teléfono: <a href="tel:+526144438004">(614) 443 8004</a>
-                                    </li>
-                                    <li>
-                                        Correo: <a href="mailto:golivas@b-seguros.com.mx">golivas@b-seguros.com.mx</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 my-auto">
-                    <div class="content">
-                        <!-- Aquí se inyecta feedback a usuario vía Ajax -->
-                        <div id="form-messages"></div>
-                        <!-- /Aquí se inyecta feedback a usuario vía Ajax -->
-                        <form action="mailer.php" method="POST" class="row g-3 needs-validation contact-form mb-4 mb-lg-0" id="ajax-contact" novalidate>
-                            <div class="col-md-6 form-floating">
-                                <input type="text" class="form-control shadow-none" id="nombre" name="nombre" placeholder="Nombre*"
-                                    pattern=".{5,50}" required>
-                                <label for="nombre" class="form-label">Nombre*</label>
-                                <div class="valid-feedback">
-                                    ¡Se ve bien!
-                                </div>
-                                <div class="invalid-feedback">
-                                    Por favor introduce tu nombre completo.
-                                </div>
-                            </div>
-                            <div class="col-md-6 form-floating">
-                                <input type="text" class="form-control shadow-none" id="apellido" name="apellido" placeholder="Apellido*"
-                                    pattern=".{5,50}" required>
-                                <label for="nombre" class="form-label">Apellido*</label>
-                                <div class="valid-feedback">
-                                    ¡Se ve bien!
-                                </div>
-                                <div class="invalid-feedback">
-                                    Por favor introduce tu apellido.
-                                </div>
-                            </div>
-                            <div class="col-md-6 form-floating">
-                                <input type="email" class="form-control shadow-none" id="correo" name="correo" placeholder="Correo electrónico*"
-                                    required>
-                                <label for="correo" class="form-label">Correo electrónico*</label>
-                                <div class="valid-feedback">
-                                    ¡Se ve bien!
-                                </div>
-                                <div class="invalid-feedback">
-                                    Por favor introduce un correo electrónico válido.
-                                </div>
-                            </div>
-                            <div class="col-md-6 form-floating">
-                                <input type="tel" class="form-control shadow-none" id="telefono" name="telefono" placeholder="Teléfono*"
-                                    pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
-                                <label for="correo" class="form-label">Teléfono*</label>
-                                <div class="valid-feedback">
-                                    ¡Se ve bien!
-                                </div>
-                                <div class="invalid-feedback">
-                                    Por favor escribe un número de teléfono válido (Ej: 6141234567).
-                                </div>
-                            </div>
-                            <div class="col-md-6 form-floating">
-                                <select class="form-select" id="tipo-de-seguro" name="tipo-de-seguro" aria-label="Tipo de seguro*" required>
-                                    <option selected disabled value="">Personas:</option>
-                                    <option value="Gastos médicos mayores">Gastos médicos mayores</option>
-                                    <option value="Vida">Vida</option>
-                                    <option value="Auto">Auto</option>
-                                    <option value="Accidentes personales">Accidentes personales</option>
-                                    <option value="Seguro de casa">Seguro de casa</option>
-                                    <option value="Educación">Educación</option>
-                                    <option value="Viaje">Viaje</option>
-                                    <option disabled value="">Empresas:</option>
-                                    <option value="Daños">Daños</option>
-                                    <option value="Gastos médicos colectivo">Gastos médicos colectivo</option>
-                                    <option value="Vida grupo">Vida grupo</option>
-                                    <option value="Finanzas">Finanzas</option>
-                                    <option value="Flotillas">Flotillas</option>
-                                    <option value="Transporte">Transporte</option>
-                                </select>
-                                <label for="tipo-de-seguro">Tipo de seguro*</label>
-                                <div class="valid-feedback">
-                                    ¡Se ve bien!
-                                </div>
-                                <div class="invalid-feedback">
-                                    Por favor selecciona un tipo de seguro.
-                                </div>
-                            </div>
-                            <div class="col-md-6 my-auto text-end">
-                                <button type="submit" class="btn btn-secondary btn-block rounded-pill mt-4 px-4 py-2">
-                                    <i class="fa-solid fa-paper-plane"></i> Enviar
-                                </button>
-                                <div id="hold-on-a-sec">
-                                    <i id="contact-spinner" class="fas fa-spinner fa-spin"></i> Espera un momento por favor...
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="copyright">
-            <p>&copy; 2022 B-Seguros. Todos los derechos reservados. Made with <i class="fa-solid fa-heart"></i> by <a href="https://mixen.mx/" target="_blank">Mixen</a>.</p>
-        </div>
-    </footer>
-
-    <!-- a href="https://wa.me/52614?text=Hola%20FOO%20BAR,%20necesito%20información." class="whatsapp" target="_blank"><i class="fab fa-whatsapp whatsapp-icon"></i></a -->
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./assets/js/app.bundle.js"></script>
-</body>
-</html>
+<?php get_footer(); ?>
