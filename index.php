@@ -231,9 +231,7 @@
                         <h2>¿Qué hacer</h2>
                         <h1>en caso de siniestro?</h1>
                         <p>Infórmate en caso de siniestro.</p>
-                        <div class="text-lg-end">
-                            <a href="<?php echo get_permalink('5'); ?>" class="btn btn-primary rounded-pill mt-2 mb-4 mb-lg-0 px-4 py-2">Leer más</a>
-                        </div>
+                        <a href="<?php echo get_permalink('5'); ?>" class="btn btn-primary rounded-pill mt-2 mb-4 mb-lg-0 px-4 py-2">Leer más</a>
                     </div>
                 </div>
                 <div class="col-lg-5 my-auto">
