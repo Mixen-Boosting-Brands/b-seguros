@@ -305,6 +305,10 @@ header#navbar {
         color: $primary;
     }
 
+    img {
+        width: 100%;
+    }
+
     .btn-primary {
         &:hover {
             background-color: $bg-secondary;
