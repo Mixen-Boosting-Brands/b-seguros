@@ -86,10 +86,10 @@
                         <i class="fas fa-phone"></i> <a href="tel:+526144438004">(614) 443 8004</a>
                     </li>
 					<li>
-                        <i class="fa-brands fa-whatsapp"></i> <a href="#">(614) 555 5555</a>
+                        <i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/526143576264?text=Hola%20B-Seguros,%20necesito%20información." target="_blank">(614) 357 6264</a>
                     </li>
 					<li>
-                        <i class="fa-brands fa-whatsapp"></i> <a href="#">(614) 555 5555</a>
+                        <i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/526141189170?text=Hola%20B-Seguros,%20necesito%20información." target="_blank">(614) 118 9170</a>
                     </li>
                 </ul>
             </div>
