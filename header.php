@@ -38,15 +38,19 @@
                     <li>
                         <a <?php if (is_home() ): ?>class="anchor"<?php endif; ?>  id="btn-nav-1" href="<?php if (!is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#cotiza-tu-seguro">Cotiza tu seguro</a>
                     </li>
+                    <hr>
                     <li>
                         <a <?php if (is_home() ): ?>class="anchor"<?php endif; ?>  id="btn-nav-2" href="<?php if (!is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#servicios">Servicios</a>
                     </li>
+                    <hr>
                     <li>
                         <a <?php if (is_home() ): ?>class="anchor"<?php endif; ?>  id="btn-nav-3" href="<?php if (!is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#cta-3">¿Qué hacer en caso de siniestro?</a>
                     </li>
+                    <hr>
                     <li>
                         <a <?php if (is_home() ): ?>class="anchor"<?php endif; ?>  id="btn-nav-4" href="<?php if (!is_home() ): ?><?php echo esc_url( home_url() ); ?><?php endif; ?>#seguros">Conoce nuestros seguros</a>
                     </li>
+                    <hr>
                     <li>
                         <a class="anchor" id="btn-nav-4" href="#contacto">Contacto</a>
                     </li>
