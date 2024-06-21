@@ -9,13 +9,17 @@
                             <!-- Slides -->
                             <div class="swiper-slide">
                                 <figure>
-                                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/empresas/logos-empresas-1.png" alt="" class="img-fluid">
+                                    <img src="<?php echo esc_url(
+                                        get_template_directory_uri()
+                                    ); ?>/assets/images/empresas/logos-empresas-1.png" alt="" class="img-fluid">
                                 </figure>
                             </div>
                             <!-- Slides -->
                             <div class="swiper-slide">
                                 <figure>
-                                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/empresas/logos-empresas-2.png" alt="" class="img-fluid">
+                                    <img src="<?php echo esc_url(
+                                        get_template_directory_uri()
+                                    ); ?>/assets/images/empresas/logos-empresas-2.png" alt="" class="img-fluid">
                                 </figure>
                             </div>
                         </div>
@@ -56,7 +60,7 @@
                                         Teléfono: <a href="tel:+526144438004">(614) 443 8004</a>
                                     </li>
                                     <li>
-                                        Correo: <a href="mailto:golivas@b-seguros.com.mx">golivas@b-seguros.com.mx</a>
+                                        Correo: <a href="mailto:ynavarro@b-seguros.com.mx">ynavarro@b-seguros.com.mx</a>
                                     </li>
                                 </ul>
                             </div>
@@ -156,7 +160,9 @@
         </div>
 
         <div id="copyright">
-            <p>&copy; <?php echo esc_html( date( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>. Todos los derechos reservados. Made with <i class="fa-solid fa-heart"></i> by <a href="https://mixen.mx/" target="_blank">Mixen</a>.</p>
+            <p>&copy; <?php echo esc_html(date("Y")); ?> <?php bloginfo(
+     "name"
+ ); ?>. Todos los derechos reservados. Made with <i class="fa-solid fa-heart"></i> by <a href="https://mixen.mx/" target="_blank">Mixen</a>.</p>
         </div>
     </footer>
 
@@ -170,6 +176,8 @@
 	<?php wp_footer(); ?>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/app.bundle.js"></script>
+    <script src="<?php echo esc_url(
+        get_template_directory_uri()
+    ); ?>/assets/js/app.bundle.js"></script>
 </body>
 </html>
