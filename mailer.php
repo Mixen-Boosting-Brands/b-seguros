@@ -36,11 +36,11 @@
         $email = filter_var(trim($_POST["correo"]), FILTER_SANITIZE_EMAIL);
         $phone = trim($_POST["telefono"]);
         $insuranceType = trim($_POST["tipo-de-seguro"]);
-        
+
         try {
             //Recipients
             $mail->setFrom('golivas@b-seguros.com.mx', 'Correo B-Seguros');
-            $mail->addAddress('luis.pando@mixen.mx');     //Add a recipient
+            $mail->addAddress('ynavarro@b-seguros.com.mx');     //Add a recipient
             // $mail->addAddress('luis.pando@mixen.mx');     //Add a recipient
             // $mail->addAddress('');     //Add extra recipient
             $mail->addReplyTo($email, 'Me interesa obtener información');
